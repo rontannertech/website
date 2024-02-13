@@ -38,7 +38,7 @@ export const HeroCards = () => {
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <Image
-            src="/growth.png"
+            src="LogoOnlyTransSVG.svg"
             width={24}
             height={24}
             alt="user avatar"

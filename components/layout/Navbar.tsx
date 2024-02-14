@@ -18,7 +18,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "../ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "../utilities/mode-toggle";
-import { LogoIcon } from "./Icons";
+import Image from "next/image";
 
 interface RouteProps {
   href: string;
@@ -51,9 +51,14 @@ export const Navbar = () => {
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
-            <a href="/" className="ml-2 font-bold text-xl flex">
-              <LogoIcon />
-              ShadcnUI/React
+            <a href="/" className="ml-2 font-bold text-xl flex items-center">
+              <Image
+                src={"LogoOnlyTransSVG.svg"}
+                width={50}
+                height={50}
+                alt=""
+              />
+              Tanner Technology
             </a>
           </NavigationMenuItem>
 

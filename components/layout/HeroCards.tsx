@@ -114,10 +114,10 @@ export const HeroCards = () => {
       <Card className="absolute top-[230px] w-[340px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Free Consultantion
+            Free Consultation
             <Badge
               variant="secondary"
-              className="text-sm text-center text-primary w-[125px]"
+              className="text-sm text-center text-primary w-[100px]"
             >
               Most Popular
             </Badge>

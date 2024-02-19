@@ -28,7 +28,7 @@ export const Hero = () => {
           <LogoSpin />
         </div>
         <div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 my-2">
             <Card>
               <CardHeader className="flex justify-center items-center pb-2">
                 <Image
@@ -101,7 +101,7 @@ export const Hero = () => {
             </Card>
           </div>
 
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 my-2">
             <Card>
               <CardHeader>
                 <CardTitle className="flex item-center justify-between">

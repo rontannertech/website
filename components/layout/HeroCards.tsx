@@ -9,33 +9,37 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin } from "lucide-react";
-import { LightBulbIcon } from "./Icons";
+import { Check, Linkedin, Lightbulb } from "lucide-react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export const HeroCards = () => {
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
-      <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[340px] -top-[25px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
-            <AvatarImage alt="" src="https://github.com/shadcn.png" />
+            <AvatarImage alt="" src="kenPowell.png" />
             <AvatarFallback>SH</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">Ken Powell</CardTitle>
+            <CardDescription>K1X, Inc.</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>This landig page is awesome!</CardContent>
+        <CardContent>
+          Their AI tools allowed us to reduce our workflow by over 4 hours each
+          day. Good group of guys who know their stuff and are easy to work
+          with.
+        </CardContent>
       </Card>
 
-      {/* Team */}
-      <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      {/* President */}
+      <Card className="absolute right-[5px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <Image
             src="LogoOnlyTransSVG.svg"
@@ -44,23 +48,24 @@ export const HeroCards = () => {
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+          <CardTitle className="text-center">Ronald Tanner II</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Frontend Developer
+            President
           </CardDescription>
         </CardHeader>
 
         <CardContent className="text-center pb-2">
           <p>
-            I really enjoy transforming ideas into functional software that
-            exceeds expectations
+            I want to make a difference for smaller companies that do not get
+            the chance to have enterprise solutions. Every company large or
+            small deserve the same treatment.
           </p>
         </CardContent>
 
         <CardFooter>
           <div>
             <a
-              href="https://github.com/leoMirandaa"
+              href="https://github.com/rontannertech"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -71,7 +76,7 @@ export const HeroCards = () => {
               <GitHubLogoIcon className="w-5 h-5" />
             </a>
             <a
-              href="https://twitter.com/leo_mirand4"
+              href="https://twitter.com/rontannertech"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -91,7 +96,7 @@ export const HeroCards = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/ronald-tanner"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -106,33 +111,39 @@ export const HeroCards = () => {
       </Card>
 
       {/* Pricing */}
-      <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[200px] left-[20px] w-[340px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Free
-            <Badge variant="secondary" className="text-sm text-primary">
-              Most popular
+            Free Consultantion
+            <Badge
+              variant="secondary"
+              className="text-sm text-center text-primary w-[125px]"
+            >
+              Most Popular
             </Badge>
           </CardTitle>
-          <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
-          </div>
 
           <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+            Meeting exploring your software needs. Our way to connect with you
+            understand your problem and how we can help solve it along side you.
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Link
+            href="https://calendar.app.google/5xzCjGpL2iJEqep58"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button className="w-full">Create Consultation Meeting</Button>
+          </Link>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["Free", "30 min meeting", "Leads to project initialization"].map(
               (benefit: string) => (
                 <span key={benefit} className="flex">
                   <Check className="text-green-500" />{" "}
@@ -145,16 +156,18 @@ export const HeroCards = () => {
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[350px] right-[-50px] -bottom-[115px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
-          <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
-            <LightBulbIcon />
+          <div className="mt-1 bg-primary/20 p-1 rounded-3xl">
+            <Lightbulb className="h-8 w-8 stroke-[#fbff00]" />
           </div>
           <div>
-            <CardTitle>Light & dark mode</CardTitle>
+            <CardTitle>Custom Solutions</CardTitle>
             <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
+              We cater to your company needs. Training new LLMs around your
+              business, developing applications within and externally, cloud
+              connection to all major services, and unique UI/UX feel on both 2D
+              and 3D interactivity.
             </CardDescription>
           </div>
         </CardHeader>

@@ -39,7 +39,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* President */}
-      <Card className="absolute w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute right-[35px] w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <Image
             src="LogoOnlyTransSVG.svg"
@@ -156,7 +156,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[320px] -bottom-[118px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[320px] right-[35px] -bottom-[118px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-1 rounded-3xl">
             <Lightbulb className="h-8 w-8 stroke-[#fbff00]" />

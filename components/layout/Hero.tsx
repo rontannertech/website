@@ -6,7 +6,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const Hero = () => {
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 sm:py-32 gap-10">
+    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="space-y-6">
         <LogoSpin />
       </div>

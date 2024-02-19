@@ -14,7 +14,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "../ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "../utilities/mode-toggle";

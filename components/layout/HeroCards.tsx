@@ -16,9 +16,9 @@ import Link from "next/link";
 
 export const HeroCards = () => {
   return (
-    <div className="lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
+    <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
-      <Card className="absolute w-[340px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[340px] h-[220px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
             <AvatarImage alt="" src="kenPowell.png" />
@@ -39,7 +39,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* President */}
-      <Card className="absolute right-[25px] w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute right-[35px] w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <Image
             src="LogoOnlyTransSVG.svg"
@@ -156,7 +156,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[320px] right-[25px] -bottom-[120px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[320px] right-[35px] -bottom-[118px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-1 rounded-3xl">
             <Lightbulb className="h-8 w-8 stroke-[#fbff00]" />

@@ -66,10 +66,10 @@ export const Sponsors = () => {
   return (
     <section
       id="sponsors"
-      className="bg-gradient-to-b from-blue-600  to-amber-600 pt-24 sm:py-32"
+      className="bg-gradient-to-b from-blue-600  to-amber-600 py-24 sm:py-24"
     >
       <div className="container">
-        <h2 className="text-center text-md lg:text-4xl font-bold mb-8">
+        <h2 className="text-center text-4xl lg:text-4xl font-bold mb-8">
           Investors
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
             {" "}

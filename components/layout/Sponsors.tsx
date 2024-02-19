@@ -64,17 +64,27 @@ const sponsors: SponsorProps[] = [
 
 export const Sponsors = () => {
   return (
-    <section id="sponsors" className="container pt-24 sm:py-32">
-      <h2 className="text-center text-md lg:text-xl font-bold mb-8 text-primary">
-        Investors and Partners
-      </h2>
+    <section
+      id="sponsors"
+      className="bg-gradient-to-b from-blue-600  to-amber-600 pt-24 sm:py-32"
+    >
+      <div className="container">
+        <h2 className="text-center text-md lg:text-4xl font-bold mb-8">
+          Investors
+          <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+            {" "}
+            &{" "}
+          </span>
+          Partners
+        </h2>
 
-      <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
-        {sponsors.map(({ icon, logo, name }: SponsorProps) => (
-          <div key={name} className="flex items-center gap-1 h-12">
-            {logo}
-          </div>
-        ))}
+        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
+          {sponsors.map(({ icon, logo, name }: SponsorProps) => (
+            <div key={name} className="flex items-center gap-1 h-12">
+              {logo}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

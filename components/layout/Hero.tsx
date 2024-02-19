@@ -1,4 +1,3 @@
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Badge } from "../ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
@@ -14,7 +13,6 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 import LogoSpin from "../spline/logoSpin";
-import cubeLeg from "../../assets/cube-leg.png";
 import MobileSpin from "../spline/mobileSpin";
 
 export const Hero = () => {

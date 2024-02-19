@@ -66,7 +66,7 @@ export const Sponsors = () => {
   return (
     <section
       id="sponsors"
-      className="bg-gradient-to-b from-blue-600  to-amber-600 py-24 sm:py-24"
+      className="bg-gradient-to-b from-[#BF9251]  to-blue-600 py-24 sm:py-24"
     >
       <div className="container">
         <h2 className="text-center text-4xl lg:text-4xl font-bold mb-8">

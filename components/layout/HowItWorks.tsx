@@ -12,7 +12,7 @@ const features: FeatureProps[] = [
 		icon: <MedalIcon />,
 		title: "Definition",
 		description:
-			"This initial step involves understanding the problem or need the software aims to address. Collaborators work together to gather input from stakeholders, define user stories, and establish clear and measurable requirements. This ensures everyone involved has a shared understanding of the project's objectives and ensures the final product aligns with those goals.",
+			"This initial step involves understanding the problem or need the software aims to address. We work together to gather input from stakeholders, define user stories, and establish clear and measurable requirements. This ensures everyone involved has a shared understanding of the project's objectives and ensures the final product aligns with those goals.",
 	},
 	{
 		icon: <MapIcon />,
@@ -30,7 +30,7 @@ const features: FeatureProps[] = [
 		icon: <GiftIcon />,
 		title: "Deployment",
 		description:
-			"With a defined plan in place, the development phase involves building the software. This stage often utilizes collaborative tools and practices such as version control systems, code reviews, and pair programming to ensure code quality, consistency, and efficient collaboration between individual developers.",
+			"Once the software is built, it undergoes rigorous testing to identify and fix bugs or ensure it meets user expectations. Collaborative testing strategies, involving both developers and testers, help ensure comprehensive evaluation and a smooth deployment process. Continuous feedback and communication are essential throughout this stage.",
 	},
 ];
 
@@ -48,8 +48,8 @@ export const HowItWorks = () => {
 				These four steps represent a general framework, and the specific
 				collaboration processes might vary depending on the nature of the
 				project, size, and methodology used. However, fostering collaboration
-				throughout these stages is critical for a successful software
-				development project.
+				throughout these stages is critical for our successful software
+				development projects.
 			</p>
 
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

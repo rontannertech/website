@@ -26,8 +26,6 @@ export default function Home() {
 			<Services />
 			<SignUp />
 			<Team />
-			<Pricing />
-			<Newsletter />
 			<FAQ />
 			<Footer />
 			<ScrollToTop />

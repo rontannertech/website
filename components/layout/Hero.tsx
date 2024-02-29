@@ -64,7 +64,7 @@ export const Hero = () => {
 										<GitHubLogoIcon className="w-5 h-5" />
 									</a>
 									<a
-										href="https://twitter.com/rontannertech"
+										href="https://x.com/rontannertech"
 										target="_blank"
 										className={buttonVariants({
 											variant: "ghost",

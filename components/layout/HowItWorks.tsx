@@ -12,7 +12,7 @@ const features: FeatureProps[] = [
 		icon: <MedalIcon />,
 		title: "Definition",
 		description:
-			"This initial step involves understanding the problem or need the software aims to address. We work together to gather input from stakeholders, define user stories, and establish clear and measurable requirements. This ensures everyone involved has a shared understanding of the project's objectives and ensures the final product aligns with those goals.",
+			"This initial step involves understanding the problem or need the software aims to address. We  work together to gather input from stakeholders, define user stories, and establish clear and measurable requirements. This ensures everyone involved has a shared understanding of the project's objectives and ensures the final product aligns with those goals.",
 	},
 	{
 		icon: <MapIcon />,

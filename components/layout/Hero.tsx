@@ -8,22 +8,21 @@ import {
 	CardTitle,
 	CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin, Lightbulb } from "lucide-react";
+import { Check, Linkedin } from "lucide-react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
-import LogoSpin from "../spline/logoSpin";
-import MobileSpin from "../spline/mobileSpin";
 import Particles from "../spline/particles";
+import MobileParticles from "../spline/mobileParticles";
 
 export const Hero = () => {
 	return (
 		<section className="container py-24 sm:py-32">
 			<div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
-				<div className="md:hidden h-[300px] md:h-[500px] lg:h-[600px] w-[300px] md:w-[500px] lg:w-[600px] object-contain">
-					<Particles />
+				<div className="md:hidden h-[300px] w-[300px] object-contain">
+					<MobileParticles />
 				</div>
-				<div className="h-[300px] md:h-[500px] lg:h-[600px] w-[300px] md:w-[500px] lg:w-[600px] object-contain">
+				<div className="hidden md:flex h-[300px] md:h-[500px] lg:h-[600px] w-[300px] md:w-[500px] lg:w-[600px] object-contain">
 					<Particles />
 				</div>
 				<div>

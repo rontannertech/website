@@ -1,5 +1,5 @@
 import { About } from "@/components/layout/About";
-import { Cta } from "@/components/layout/Cta";
+import { SignUp } from "@/components/layout/SignUp";
 import { FAQ } from "@/components/layout/FAQ";
 import { Features } from "@/components/layout/Features";
 import { Footer } from "@/components/layout/Footer";
@@ -15,23 +15,22 @@ import { Team } from "@/components/layout/Team";
 import { Testimonials } from "@/components/layout/Testimonials";
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Sponsors />
-      <About />
-      <HowItWorks />
-      <Features />
-      <Services />
-      <Cta />
-      <Testimonials />
-      <Team />
-      <Pricing />
-      <Newsletter />
-      <FAQ />
-      <Footer />
-      <ScrollToTop />
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+			<Hero />
+			<Sponsors />
+			<About />
+			<HowItWorks />
+			<Features />
+			<Services />
+			<SignUp />
+			<Team />
+			<Pricing />
+			<Newsletter />
+			<FAQ />
+			<Footer />
+			<ScrollToTop />
+		</>
+	);
 }

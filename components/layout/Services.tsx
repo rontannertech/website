@@ -1,8 +1,8 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
-import cubeLeg from "../../assets/cube-leg.png";
-import Image from "next/image";
-import Particles from "../spline/particles";
+import Earth from "../spline/earth";
+import Brain from "../spline/brain";
+import MobileBrain from "../spline/mobileBrain";
 
 interface ServiceProps {
 	title: string;
@@ -85,8 +85,11 @@ export const Services = () => {
 					</div>
 				</div>
 
-				<div className="h-[300px] md:h-[500px] lg:h-[600px] w-[300px] md:w-[500px] lg:w-[600px] object-contain">
-					<Particles />
+				<div className="md:hidden h-[300px] w-[300px] object-contain">
+					<MobileBrain />
+				</div>
+				<div className="hidden md:flex h-[300px] md:h-[500px] lg:h-[600px] w-[300px] md:w-[500px] lg:w-[600px] object-contain">
+					<Brain />
 				</div>
 			</div>
 		</section>

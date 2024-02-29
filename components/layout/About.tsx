@@ -1,7 +1,5 @@
-import LogoSpin from "../spline/logoSpin";
 import MobileSpin from "../spline/mobileSpin";
 import { Statistics } from "./Statistics";
-import Image from "next/image";
 
 export const About = () => {
 	return (

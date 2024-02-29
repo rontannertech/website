@@ -2,6 +2,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
 import cubeLeg from "../../assets/cube-leg.png";
 import Image from "next/image";
+import Particles from "../spline/particles";
 
 interface ServiceProps {
 	title: string;
@@ -84,11 +85,9 @@ export const Services = () => {
 					</div>
 				</div>
 
-				<Image
-					src={cubeLeg}
-					className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
-					alt="About services"
-				/>
+				<div className="h-[300px] md:h-[500px] lg:h-[600px] w-[300px] md:w-[500px] lg:w-[600px] object-contain">
+					<Particles />
+				</div>
 			</div>
 		</section>
 	);

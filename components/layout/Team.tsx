@@ -32,7 +32,7 @@ const teamList: TeamProps[] = [
 		description:
 			"My main goal is to help lead my team in the best way I possibly can while keeping up with modern technology standards. We focus on developing our in house strategies around our customers and making sure all our solutions are human centered. Within the AI world today, it can be challenging to not leverage it as much as possible. Yet that can lead away from that unique human touch which we don't want to surpass here.",
 		socialNetworks: [
-			{ name: "Linkedin", url: "https://linkedin.com/ronald-tanner" },
+			{ name: "Linkedin", url: "https://linkedin.com/in/ronald-tanner" },
 			{
 				name: "X",
 				url: "https://x.com/rontannertech",
@@ -44,13 +44,34 @@ const teamList: TeamProps[] = [
 		],
 	},
 	{
-		imageUrl: "/LogoOnlyTransSVG.svg",
+		imageUrl: "/jon.jpg",
 		name: "Jonathan McCoy",
-		position: "Vice President",
+		position: "Vice President of Marketing",
 		description:
 			"I will always focus on adapting to the customers project goals and making sure our team can achieve them. From managing restaurants in the early days of my career to adapting to the crazy AI world we are about to live in, I have learned to cater to curveball thrown at us. We have adapted, grown, and leveraged each other to grow as a team and produce successful solutions leading to happy customers.",
 		socialNetworks: [
-			{ name: "Linkedin", url: "https://linkedin.com/jon-mccoy" },
+			{ name: "Linkedin", url: "https://linkedin.com/in/jon-mccoy" },
+			{
+				name: "X",
+				url: "https://x.com/rontannertech",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/rontannertech",
+			},
+		],
+	},
+	{
+		imageUrl: "/trey.jpg",
+		name: "Trey Monk",
+		position: "Vice President of Sales",
+		description:
+			"I will always focus on adapting to the customers project goals and making sure our team can achieve them. From managing restaurants in the early days of my career to adapting to the crazy AI world we are about to live in, I have learned to cater to curveball thrown at us. We have adapted, grown, and leveraged each other to grow as a team and produce successful solutions leading to happy customers.",
+		socialNetworks: [
+			{
+				name: "Linkedin",
+				url: "https://linkedin.com/in/robert-monk-921619106",
+			},
 			{
 				name: "X",
 				url: "https://x.com/rontannertech",
@@ -102,7 +123,7 @@ export const Team = () => {
 				development or project management experience!
 			</p>
 
-			<div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-10">
+			<div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 gap-y-10">
 				{teamList.map(
 					({
 						imageUrl,
@@ -123,7 +144,9 @@ export const Team = () => {
 									alt={`${name} ${position}`}
 									className="absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover"
 								/>
-								<CardTitle className="text-center">{name}</CardTitle>
+								<CardTitle className="text-center text-foreground">
+									{name}
+								</CardTitle>
 								<CardDescription className="text-primary">
 									{position}
 								</CardDescription>

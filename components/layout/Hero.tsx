@@ -84,7 +84,7 @@ export const Hero = () => {
 									</a>
 
 									<a
-										href="https://www.linkedin.com/ronald-tanner"
+										href="https://www.linkedin.com/in/ronald-tanner"
 										target="_blank"
 										className={buttonVariants({
 											variant: "ghost",

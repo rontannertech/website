@@ -74,7 +74,7 @@ export const Features = () => {
 				{features.map(({ title, description, image }: FeatureProps) => (
 					<Card key={title}>
 						<CardHeader>
-							<CardTitle>{title}</CardTitle>
+							<CardTitle className="text-foreground">{title}</CardTitle>
 						</CardHeader>
 
 						<CardContent>{description}</CardContent>

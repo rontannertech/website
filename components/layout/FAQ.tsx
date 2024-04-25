@@ -29,7 +29,7 @@ const FAQList: FAQProps[] = [
 		question:
 			"Is there a way that we can work along side you with development projects or do you only do it all in house?",
 		answer:
-			"We would love to work with other teams! We want to, in fact. Collaboration is key in all regards of business and we want to help you just as much as we want help from you.",
+			"We would love to work with other teams. We want to, in fact. Collaboration is key in all regards of business and we want to help you just as much as we want help from you.",
 		value: "item-3",
 	},
 	{

@@ -44,22 +44,22 @@ export const Footer = () => {
 				</div>
 
 				<div className="flex flex-col gap-2">
-					<h3 className="font-bold text-lg">Platforms</h3>
+					<h3 className="font-bold text-lg">Products</h3>
 					<div>
 						<a href="#" className="opacity-60 hover:opacity-100">
-							Web
+							Web Development
 						</a>
 					</div>
 
 					<div>
 						<a href="#" className="opacity-60 hover:opacity-100">
-							Mobile
+							BIMetics
 						</a>
 					</div>
 
 					<div>
 						<a href="#" className="opacity-60 hover:opacity-100">
-							Desktop
+							Tanner Transcriptor
 						</a>
 					</div>
 				</div>

@@ -17,18 +17,21 @@ import { Testimonials } from "@/components/layout/Testimonials";
 export default function Home() {
 	return (
 		<>
-			<Navbar />
-			<Hero />
-			<Sponsors />
-			<About />
-			<HowItWorks />
-			<Features />
-			<Services />
-			<SignUp />
-			<Team />
-			<FAQ />
-			<Footer />
-			<ScrollToTop />
+			<div className="bg-[url('/lightning.jpg')] bg-contain">
+				<Navbar />
+				<Hero />
+				<Sponsors />
+				<About />
+				<HowItWorks />
+				<Features />
+				<Pricing />
+				<Services />
+				<SignUp />
+				<Team />
+				<FAQ />
+				<Footer />
+				<ScrollToTop />
+			</div>
 		</>
 	);
 }

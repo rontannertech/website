@@ -36,7 +36,9 @@ export const Hero = () => {
 									alt="user avatar"
 									className="rounded-full aspect-square object-cover mb-2"
 								/>
-								<CardTitle className="text-center">Ronald Tanner II</CardTitle>
+								<CardTitle className="text-center text-foreground">
+									Ronald Tanner II
+								</CardTitle>
 								<CardDescription className="font-normal text-primary">
 									President
 								</CardDescription>
@@ -102,7 +104,7 @@ export const Hero = () => {
 					<div className="flex flex-col gap-8 my-2">
 						<Card>
 							<CardHeader>
-								<CardTitle className="flex item-center justify-between">
+								<CardTitle className="flex item-center justify-between text-foreground">
 									Free Consultation
 									<Badge
 										variant="secondary"
@@ -125,7 +127,7 @@ export const Hero = () => {
 									rel="noopener noreferrer"
 									target="_blank"
 								>
-									<Button className="w-full">
+									<Button className="w-full bg-foreground">
 										Create Consultation Meeting
 									</Button>
 								</Link>

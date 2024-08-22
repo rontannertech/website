@@ -16,6 +16,7 @@ import {
 interface FeatureProps {
 	icon: JSX.Element;
 	title: string;
+	background: string;
 	description: string;
 }
 
@@ -23,6 +24,7 @@ const features: FeatureProps[] = [
 	{
 		icon: <LightbulbIcon className="w-12 h-12 stroke-foreground" />,
 		title: "Define",
+		background: "bg-muted/50 bg-[url('/lightning2.jpg')] bg-cover",
 		description:
 			"This initial step involves understanding the problem and gathering input from stakeholders to define user stories and clear requirements for the software.",
 		// "This initial step involves understanding the problem or need the software aims to address. We  work together to gather input from stakeholders, define user stories, and establish clear and measurable requirements. This ensures everyone involved has a shared understanding of the project's objectives and ensures the final product aligns with those goals.",
@@ -30,6 +32,7 @@ const features: FeatureProps[] = [
 	{
 		icon: <PaintbrushIcon className="w-12 h-12 stroke-foreground" />,
 		title: "Design",
+		background: "bg-muted/50 bg-[url('/lightning.jpg')] bg-cover",
 		description:
 			"The team collaboratively defines the software’s architecture, UI, and workflow, considering programming languages, frameworks, and tools, to ensure a well-designed and efficient solution that meets established requirements.",
 		//"Once the requirements are established, the team collaboratively defines the software's architecture, user interface (UI), and overall workflow. This includes decisions about programming languages, frameworks, and development tools. Collaboration is crucial to ensure a well-designed and efficient solution that considers various perspectives and potential challenges.",
@@ -37,6 +40,7 @@ const features: FeatureProps[] = [
 	{
 		icon: <FlaskConicalIcon className="w-12 h-12 stroke-foreground" />,
 		title: "Develop",
+		background: "bg-muted/50 bg-[url('/lightning2.jpg')] bg-cover",
 		description:
 			"This phase involves building the software according to a defined plan, using collaborative tools and practices to ensure code quality with efficient teamwork.",
 		//"With a defined plan in place, the development phase involves building the software. This stage often utilizes collaborative tools and practices such as version control systems, code reviews, and pair programming to ensure code quality, consistency, and efficient collaboration between individual developers.",
@@ -44,6 +48,7 @@ const features: FeatureProps[] = [
 	{
 		icon: <GemIcon className="w-12 h-12 stroke-foreground" />,
 		title: "Deploy",
+		background: "bg-muted/50 bg-[url('/lightning.jpg')] bg-cover shadow-xl",
 		description:
 			"Once software is built, it undergoes thorough testing to identify and fix issues, ensuring it meets user needs through collaborative strategies and ongoing feedback.",
 		//	"Once the software is built, it undergoes rigorous testing to identify and fix bugs or ensure it meets user expectations. Collaborative testing strategies, involving both developers and testers, help ensure comprehensive evaluation and a smooth deployment process. Continuous feedback and communication are essential throughout this stage.",
@@ -72,17 +77,19 @@ export const HowItWorks = () => {
 			</p> */}
 
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-				{features.map(({ icon, title, description }: FeatureProps) => (
-					<Card key={title} className="bg-muted/50">
-						<CardHeader>
-							<CardTitle className="grid gap-4 place-items-center text-foreground">
-								{icon}
-								{title}
-							</CardTitle>
-						</CardHeader>
-						<CardContent>{description}</CardContent>
-					</Card>
-				))}
+				{features.map(
+					({ icon, title, background, description }: FeatureProps) => (
+						<Card key={title} className={background}>
+							<CardHeader>
+								<CardTitle className="grid gap-4 place-items-center text-foreground">
+									{icon}
+									{title}
+								</CardTitle>
+							</CardHeader>
+							<CardContent>{description}</CardContent>
+						</Card>
+					)
+				)}
 			</div>
 		</section>
 	);

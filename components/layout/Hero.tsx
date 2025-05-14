@@ -37,7 +37,7 @@ export const Hero = () => {
 									className="rounded-full aspect-square object-cover mb-2"
 								/>
 								<CardTitle className="text-center text-foreground">
-									Ronald Tanner II
+									Eddie Tanner II
 								</CardTitle>
 								<CardDescription className="font-normal text-primary">
 									President
@@ -86,7 +86,7 @@ export const Hero = () => {
 									</a>
 
 									<a
-										href="https://www.linkedin.com/in/ronald-tanner"
+										href="https://www.linkedin.com/in/Eddie-tanner"
 										target="_blank"
 										className={buttonVariants({
 											variant: "ghost",

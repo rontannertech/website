@@ -27,12 +27,12 @@ interface SociaNetworkslProps {
 const teamList: TeamProps[] = [
 	{
 		imageUrl: "/Porsche.png",
-		name: "Ronald Tanner II",
+		name: "Eddie Tanner II",
 		position: "President",
 		description:
 			"My main goal is to help lead my team in the best way I possibly can while keeping up with modern technology standards. We focus on developing our in house strategies around our customers and making sure all our solutions are human centered. Within the AI world today, it can be challenging to not leverage it as much as possible. Yet that can lead away from that unique human touch which we don't want to surpass here.",
 		socialNetworks: [
-			{ name: "Linkedin", url: "https://linkedin.com/in/ronald-tanner" },
+			{ name: "Linkedin", url: "https://linkedin.com/in/Eddie-tanner" },
 			{
 				name: "X",
 				url: "https://x.com/rontannertech",

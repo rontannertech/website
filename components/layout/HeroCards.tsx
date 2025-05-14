@@ -49,7 +49,7 @@ export const HeroCards = () => {
 						className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
 					/>
 					<CardTitle className="text-center text-foreground">
-						Ronald Tanner II
+						Eddie Tanner II
 					</CardTitle>
 					<CardDescription className="font-normal text-primary">
 						President
@@ -98,7 +98,7 @@ export const HeroCards = () => {
 						</a>
 
 						<a
-							href="https://www.linkedin.com/in/ronald-tanner"
+							href="https://www.linkedin.com/in/Eddie-tanner"
 							target="_blank"
 							className={buttonVariants({
 								variant: "ghost",

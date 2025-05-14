@@ -124,7 +124,7 @@ export const Footer = () => {
 						href="https://github.com/rontannertech"
 						className="text-primary transition-all border-primary hover:border-b-2"
 					>
-						Ronald Tanner II
+						Eddie Tanner II
 					</a>
 				</h3>
 			</section>
